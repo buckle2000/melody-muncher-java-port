@@ -19,11 +19,11 @@ public class Scene extends ApplicationAdapter {
 
     @Override
     public void render() {
-        // Update
-        gameObjects.forEach(gameObject -> gameObject.update(Gdx.graphics.getDeltaTime()));
         // Sort by z order
         // TODO cache this
         gameObjects.sort(Comparator.comparing(GameObject::getZ));
+        // Update
+        gameObjects.forEach(gameObject -> gameObject.update(Gdx.graphics.getDeltaTime()));
         batch.begin();
         gameObjects.forEach(gameObject -> gameObject.render(batch));
         batch.end();

@@ -1,5 +1,6 @@
 package net.shenzhong.melody_muncher;
 
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public abstract class GameObject {
@@ -16,7 +17,7 @@ public abstract class GameObject {
     /**
      * Render
      */
-    public abstract void render(SpriteBatch batch);
+    public abstract void render(Batch batch);
 
     /**
      * Update

@@ -5,8 +5,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL30;
 import com.sun.istack.internal.NotNull;
 
-import java.util.Timer;
-
 public class Game extends ApplicationAdapter {
     protected Scene currentScene;
 
@@ -21,8 +19,6 @@ public class Game extends ApplicationAdapter {
         this.currentScene.dispose();
         this.currentScene = currentScene;
     }
-
-    private Timer timer;
 
     @Override
     public void create() {
