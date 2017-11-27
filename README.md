@@ -2,11 +2,12 @@
 
 ## 如何运行
 
-运行 `desktop/src/.../xxx.java`
+- `git clone xxxxx`
+- 下载安装libgdx
+- 导入 `build.gradle`
+- 把java language版本设为8或以上
+- 运行 `desktop/src/.../xxx.java`
 
-## 注意事项
-
-把java language版本设为8或以上
 
 ## Copyright thingy
 
