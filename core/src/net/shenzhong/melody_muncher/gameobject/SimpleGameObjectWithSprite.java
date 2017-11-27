@@ -5,7 +5,11 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import net.shenzhong.melody_muncher.GameObject;
 
-public class SimpleGameObjectWithSprite extends GameObject {
+/**
+ * This is just a reference implementation
+ * Don't use this in production
+ */
+public class SimpleGameObjectWithSprite implements GameObject {
     public Sprite sprite;
     private int z;
 
