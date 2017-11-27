@@ -8,6 +8,7 @@
 - 把java language版本设为8或以上
 - 运行 `desktop/src/.../xxx.java`
 
+![Launch Config](reference/launch_config.png)
 
 ## Copyright thingy
 
