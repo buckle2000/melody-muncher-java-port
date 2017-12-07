@@ -13,10 +13,10 @@ public class z_ordering extends Scene {
     @Override
     public void create() {
         super.create();
-        SimpleGameObjectWithSprite a = new SimpleGameObjectWithSprite(0, new Texture("badlogic.jpg"));
-        SimpleGameObjectWithSprite b = new SimpleGameObjectWithSprite(-1, new Texture("badlogic.jpg"));
-        b.sprite.setPosition(30,30);
-        gameObjects.add(a);
-        gameObjects.add(b);
+        for (int i = 0; i < 10; i++) {
+            SimpleGameObjectWithSprite thing = new SimpleGameObjectWithSprite(i, new Texture("badlogic.jpg"));
+            thing.sprite.setPosition(30*i, 30*i);
+            gameObjects.add(thing);
+        }
     }
 }
