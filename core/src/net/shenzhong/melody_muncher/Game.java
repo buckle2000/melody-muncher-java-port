@@ -6,7 +6,16 @@ import com.badlogic.gdx.graphics.GL30;
 import com.sun.istack.internal.NotNull;
 
 public class Game extends ApplicationAdapter {
+    private static Game instance;
     protected Scene currentScene;
+
+    public Game() {
+        this.instance = this;
+    }
+
+    public static Game getInstance() {
+        return instance;
+    }
 
     public
     @NotNull
